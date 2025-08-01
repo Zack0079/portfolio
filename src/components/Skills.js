@@ -31,7 +31,7 @@ export default function Skills() {
     <section id="skills" className="py-16 bg-[#34495e]">
       <div className="container mx-auto text-center text-white">
         <h2 className="text-3xl font-bold mb-8">Skills</h2>
-        <div className="text-lg mb-10 w-2/3 mx-auto grid grid-cols-2 gap-4 ">
+        <div className="text-lg mb-10 p-5 mx-auto grid grid-cols-4 gap-4 ">
 
 
           {items.map((item, index) => (
