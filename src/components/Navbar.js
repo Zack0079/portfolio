@@ -14,7 +14,6 @@ export default function Navbar() {
         let targetElement = null;
         // console.log("link:", index);
 
-
         if (index != 0) {
           let targetId = link.getAttribute('href').substring(2);
           targetElement = document.getElementById(targetId);
