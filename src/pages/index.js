@@ -14,19 +14,34 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
+
+import Head from "next/head";
+
+
 export default function Home() {
   return (
-    <div>
-      <Overlap />
-      <Navbar />
-      <Hero />
-      <About />
-      <Education />
-      <Experience />
-      <Skills />
-      <Contact />
-      <Footer />
-      {/* <Temp /> */}
-    </div>
+    <>
+      <Head>
+        <title>My Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" data-next-head=""></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+      </Head>
+      <div>
+        <Overlap />
+        <Navbar />
+        <Hero />
+        <About />
+        <Education />
+        <Experience />
+        <Skills />
+        <Contact />
+        <Footer />
+        {/* <Temp /> */}
+      </div>
+    </>
+
   );
 }
