@@ -19,7 +19,7 @@ export default function Overlap() {
     return (
         <>
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+                @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
             </style>
             <section id="overlap" style={{ display: activeDiv ? 'block' : 'none' }} className="text-white absolute w-full h-full z-10" >
                 <StarsCanvas count={0} />
