@@ -1,11 +1,10 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import About from '../components/About';
+import AboutAndContact from '../components/AboutAndContact';
 import Projects from '../components/Projects';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Overlap from '@/components/Overlap';
 import "../app/globals.css";
@@ -22,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
+        <title>Zack Tse Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" data-next-head=""></meta>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,15 +30,14 @@ export default function Home() {
       </Head>
       <div>
         <Overlap />
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
-        <About />
-        <Education />
-        <Experience />
+        {/* <Education />
+        <Experience /> */}
         <Skills />
-        <Contact />
+        <Projects />
+        <AboutAndContact />
         <Footer />
-        {/* <Temp /> */}
       </div>
     </>
 
