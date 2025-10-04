@@ -6,11 +6,14 @@ import "../app/overlap.css";
 
 
 export default function Overlap() {
+
+    //TODO: fix scroll lock when herf #contact is clicked from navbar
     const [activeDiv, setActiveDiv] = useState(true);
 
     useEffect(() => {
         if (activeDiv) {
-            document.body.style.overflow = 'hidden'; // Disable background scrolling
+            window.scrollTo(0, 0); //prevnt none showing at the top when re-open
+            document.body.style.overflow = 'hidden';             // Disable background scrolling
         } else {
             document.body.style.overflow = 'auto'; // Enable background scrolling
         }
