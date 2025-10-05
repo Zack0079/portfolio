@@ -9,12 +9,15 @@ export default function AboutAndContact() {
         <div className="flex flex-col text-start" >
           <h2 className="text-3xl font-bold mb-8 ">About Me</h2>
           <ul className="list-disc list-inside space-y-2 text-lg">
+            <li>Full Name: Cheung Yuet Tse <span className="ml-5">(Preferred Name: Zack)</span></li>
             <li>Love learning new skills and exploring emerging technologies.</li>
             <li>Fast learner and adaptable to new challenges.</li>
             <li>Otaku: like Video games, anime, and board games</li>
           </ul>
-
-        </div>
+        <a href="/assets/resume_CYT.pdf" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:underline shrink-0 rounded-full px-3 py-2 text-lg font-bold hover:text-orange-300 w-fit mt-4">
+           View My Resume
+        </a>
+      </div>
 
         <div className="shrink-0 flex flex-col items-start" >
           <h2 className="text-3xl font-bold mb-8 ">Contact Me</h2>
