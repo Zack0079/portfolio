@@ -1,0 +1,58 @@
+.floating-element {
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition for transform changes */
+}
+
+.floating-element:hover:not(.active) {
+    transform: translateY(-10px) translateX(-5px) scale(1.1);
+    /* Moves up slightly and scales up on hover */
+}
+
+.active {
+    background-color: #b4b4b435;
+}
+
+
+.floating-button {
+    transition: transform 0.1s ease-in-out;
+}
+
+.floating-button:hover {
+    transform: scale(1.05);
+}
+
+.green-400:hover, .green-400.active {
+    color: #22c55e;
+}
+
+.blue-400:hover, .blue-400.active {
+    color: #3b82f6;
+}
+
+.pink-400:hover, .pink-400.active {
+    color: #ec4899;
+}
+
+.orange-400:hover, .orange-400.active {
+    color: #f97316;
+}
+
+@keyframes pulse-blur {
+    0% {
+        filter: blur(0);
+    }
+    50% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0);
+    }
+} 
+
+.blurring {
+  filter: blur(0);
+  animation: pulse-blur 1s ease-in-out;
+}
+
+
+
