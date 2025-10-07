@@ -15,9 +15,15 @@ config.autoAddCss = false;
 
 
 import Head from "next/head";
-
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [showComponents, setShowComponents] = useState(false);
+
+  useEffect(() => {
+    setShowComponents(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -30,15 +36,22 @@ export default function Home() {
       </Head>
       <div>
         <Overlap />
+        {showComponents && (
+          <>
+            <Hero />
+            <Skills />
+            <Projects />
+            <AboutAndContact />
+            <Footer />
+          </>
+        )}
+
+
         {/* <Navbar /> */}
-        <Hero />
         {/* <Education />
         <Experience /> */}
-        <Skills />
-        <Projects />
-        <AboutAndContact />
-        <Footer />
-      </div>
+
+      </div >
     </>
 
   );
