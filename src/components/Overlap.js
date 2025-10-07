@@ -12,8 +12,17 @@ export default function Overlap() {
 
     useEffect(() => {
         if (activeDiv) {
-            window.scrollTo(0, 0); //prevnt none showing at the top when re-open
-            document.body.style.overflow = 'hidden';             // Disable background scrolling
+
+            if (typeof window !== 'undefined') {
+                const handleScroll = () => {
+                    window.scrollTo(0, 0); //prevnt none showing at the top when re-open
+                    document.body.style.overflow = 'hidden'; // Disable background scrolling
+
+                };
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll)
+
+            }
         } else {
             document.body.style.overflow = 'auto'; // Enable background scrolling
         }
