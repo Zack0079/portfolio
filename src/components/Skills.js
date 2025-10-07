@@ -45,7 +45,7 @@ export default function Skills() {
         "Game Engines": ["Unity", "Unreal"],
         "Game Programming": ["C++", "Blueprints", "C# Scripting"],
         "Game Design": ["Level Design", "Character Design"],
-        "Modeling & Animation": ["Blender", "GIMP",]
+        "Modeling & Animation": ["Blender", "GIMP","Aseprite", "Tilemap"]
       }
     }
   ];
@@ -83,7 +83,7 @@ export default function Skills() {
 
           </ul>
 
-          <div className={`flex-1 bg-[#202d3f] ${blurringAnimation} p-6 text-medium rounded-lg text-${items[activeDiv]?.color} floating`}>
+          <div className={`flex-1 bg-[#202d3f] ${blurringAnimation} p-6 text-medium rounded-lg ${"text-" + items[activeDiv].color} floating`}>
             <h3 className="text-2xl font-bold mb-2">{items[activeDiv]?.title}</h3>
             {
               Object.entries(items[activeDiv]?.content).map(([key, value]) => (
