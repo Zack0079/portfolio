@@ -66,7 +66,12 @@ export default function Hero() {
 
 
         <div className="md:text-xl  text-gray-100 mt-8 flex flex-row justify-center space-x-4 mb-4">
-          <button className="rounded-full bg-gray-600 px-3 py-2 text-gray-300  hover:text-white">View My Work</button>
+          <a href="#projects" className="rounded-full bg-gray-600 px-3 py-2 text-gray-300  hover:text-white">
+            <span>View My Work</span>
+          </a>
+
+          
+          
           <a href="#contact" className="rounded-full bg-gray-600 px-3 py-2 text-gray-300  hover:text-white">
             <span>Contact</span>
           </a>
