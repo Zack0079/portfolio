@@ -64,17 +64,16 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="py-16 bg-black ">
-      <div className="container mx-auto text-center w-6/12 h-120">
-        <h1 className="text-white text-3xl font-bold mb-8">Skills</h1>
+    <section id="skills" className="py-8 lg:py-16 bg-black ">
+      <div className="container mx-auto text-center w-full sm:w-11/12 md:w-8/12 lg:w-6/12 px-2 sm:px-0">
+        <h1 className="text-white text-2xl sm:text-3xl font-bold md:mb-8">Skills</h1>
 
-        <div className="flex flex-2">
-          <ul className="flex flex-col gap-1 border-r-2 mt-5 font-medium text-gray-300 mr-4 pr-1 ">
-
+        <div className="flex flex-col sm:flex-row">
+          <ul className="flex flex-row flex-wrap sm:flex-col justify-center sm:justify-start gap-1 border-b-2 sm:border-r-2 sm:border-b-0 mt-5 font-medium text-gray-300 mb-4 sm:mb-0 sm:mr-4 pb-3 sm:pb-0 sm:pr-1 ">
             {
               items.map((item, index) => (
                 <li key={index}>
-                  <button className={`shrink-0 text-md items-center rounded-l-xl bg-opacity-30 ${item.color} justify-center px-2 py-2 w-full floating-element ${activeDiv === index ? "active" : ""}`} onClick={() => showContent(index)}>
+                  <button className={`shrink-0 text-sm sm:text-md items-center rounded-xl sm:rounded-l-xl sm:rounded-r-none bg-opacity-30 ${item.color} justify-center px-2 py-2 w-full floating-element ${activeDiv === index ? "active" : ""}`} onClick={() => showContent(index)}>
                     {item.title}
                   </button>
                 </li>
@@ -83,7 +82,7 @@ export default function Skills() {
 
           </ul>
 
-          <div className={`flex-1 bg-[#202d3f] ${blurringAnimation} p-6 text-medium rounded-lg ${"text-" + items[activeDiv].color} floating`}>
+          <div className={`flex-1 bg-[#202d3f] ${blurringAnimation} p-4 sm:p-6 text-medium rounded-lg text-left ${"text-" + items[activeDiv].color} floating`}>
             <h3 className="text-2xl font-bold mb-2">{items[activeDiv]?.title}</h3>
             {
               Object.entries(items[activeDiv]?.content).map(([key, value]) => (
