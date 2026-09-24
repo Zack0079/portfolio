@@ -55,11 +55,12 @@ export default function Projects() {
 
 
   return (
-    <section id="projects" className="bg-gray-900 py-16">
+    <section id="projects" className="bg-gray-900 py-8 lg:py-16">
       <div className="container mx-auto text-center bg-gray-900">
-        <h2 className="text-3xl text-white font-bold mb-8">My Projects</h2>
+        <h1 className="text-white text-2xl sm:text-3xl font-bold mb-4 md:mb-8">My Projects</h1>
 
-        <div className="slider-container w-8/12 mx-auto text-white">
+        <div className="slider-container w-11/12 sm:w-10/12 lg:w-8/12 mx-auto text-white">
+        <b className="text-gray-300 mb-4 md:hidden">Swipe to see more</b>
           <MultiCardCarousel projects={projects} />
         </div>
 
