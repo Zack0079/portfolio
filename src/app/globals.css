@@ -40,3 +40,10 @@ body {
    margin-top: 0;
    transition: all 1s;
 }
+
+@media (max-width: 728px) {
+  body,
+  body * {
+    font-weight: 700 !important;
+  }
+}
